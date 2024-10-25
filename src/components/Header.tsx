@@ -1,5 +1,4 @@
 // Import necessary libraries and components
-import React, { useState, useEffect } from "react"; // Import React and hooks
 import { Menu, X, Sun, Moon, Code } from "lucide-react"; // Import icons from lucide-react
 import { motion, AnimatePresence } from "framer-motion"; // Import motion and AnimatePresence for animations
 
