@@ -27,6 +27,7 @@ const Hero = () => {
     <section
       id="home" // ID for the section
       className="min-h-screen pt-28 flex items-center justify-center relative overflow-hidden">
+      
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 to-white dark:from-gray-900 dark:to-gray-800" />
 
@@ -36,6 +37,7 @@ const Hero = () => {
         initial="hidden" // Initial state
         animate="visible" // Animate to visible state
         className="container mx-auto px-6 relative z-10">
+        
         {/* Animated greeting header */}
         <motion.h2
           variants={itemVariants} // Applying item animation variants
@@ -54,9 +56,7 @@ const Hero = () => {
         <motion.p
           variants={itemVariants} // Applying item animation variants
           className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl">
-          Senior Frontend Engineer with expertise in building scalable web
-          applications. Experienced in full-stack development with a focus on
-          React ecosystem and modern web technologies.
+          Frontend Engineer specializing in building scalable, user-friendly web applications using modern web technologies. Experienced with the React ecosystem and familiar with full-stack development.
         </motion.p>
 
         {/* Container for action buttons */}
@@ -83,9 +83,9 @@ const Hero = () => {
         <motion.div variants={itemVariants} className="flex space-x-6 mt-12">
           {/* Mapping through an array of social links and icons */}
           {[
-            { Icon: Github, href: "https://github.com", label: "GitHub" }, // Github link
-            { Icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" }, // LinkedIn link
-            { Icon: Mail, href: "mailto:contact@example.com", label: "Email" }, // Mail link with a valid email address
+            { Icon: Github, href: "https://github.com/Ayyubiy90", label: "GitHub" }, // Github link
+            { Icon: Linkedin, href: "https://www.linkedin.com/in/abdullah-a-2940b7260", label: "LinkedIn" }, // LinkedIn link
+            { Icon: Mail, href: "mailto:ayyubiy67@gmail.com", label: "Email" }, // Mail link with a valid email address
           ].map(({ Icon, href, label }) => (
             <motion.a
               key={href} // Unique key for each item
