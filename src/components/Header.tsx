@@ -43,9 +43,11 @@ const Header = () => {
   // Render the header component
   return (
     <header className="fixed w-full top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-sm">
+      
       {/* Navigation container */}
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
+          
           {/* Logo and brand name */}
           <motion.a
             href="#home"
@@ -73,6 +75,7 @@ const Header = () => {
                 {label} // Link label
               </motion.a>
             ))}
+
             {/* Theme toggle button */}
             <motion.button
               onClick={toggleTheme} // Toggle theme on click
@@ -83,6 +86,7 @@ const Header = () => {
                 isDark ? "Switch to light theme" : "Switch to dark theme"
               }>
               {" "}
+              
               // Updated accessibility label
               {isDark ? ( // Conditional rendering based on theme
                 <Sun className="w-5 h-5" /> // Sun icon for light theme
