@@ -1,5 +1,4 @@
 // Importing necessary libraries and components
-import React from "react"; // Importing React to create the component
 import { motion } from "framer-motion"; // Importing motion for animations
 import { Github, Linkedin, Mail } from "lucide-react"; // Importing icon components
 
