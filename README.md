@@ -98,7 +98,7 @@ There are two ways to get this project on your local machine:
 1. Create a new repository on GitHub
 2. Clone the repository to your local machine:
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/Ayyubiy90/my-portfolio.git
 ```
 3. Copy all project files to your local repository
 4. Initialize and push to your repository:
