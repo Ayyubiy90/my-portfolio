@@ -79,9 +79,11 @@ const Header = () => {
               className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
               whileHover={{ scale: 1.1 }} // Scale up on hover
               whileTap={{ scale: 0.9 }} // Scale down on tap
-              aria-label="Toggle theme">
+              aria-label={
+                isDark ? "Switch to light theme" : "Switch to dark theme"
+              }>
               {" "}
-              // Accessibility label
+              // Updated accessibility label
               {isDark ? ( // Conditional rendering based on theme
                 <Sun className="w-5 h-5" /> // Sun icon for light theme
               ) : (
@@ -98,9 +100,11 @@ const Header = () => {
               className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300"
               whileHover={{ scale: 1.1 }} // Scale up on hover
               whileTap={{ scale: 0.9 }} // Scale down on tap
-              aria-label="Toggle theme">
+              aria-label={
+                isDark ? "Switch to light theme" : "Switch to dark theme"
+              }>
               {" "}
-              // Accessibility label
+              // Updated accessibility label
               {isDark ? ( // Conditional rendering based on theme
                 <Sun className="w-5 h-5" /> // Sun icon for light theme
               ) : (
@@ -113,9 +117,9 @@ const Header = () => {
               className="text-gray-600 dark:text-gray-300"
               whileHover={{ scale: 1.1 }} // Scale up on hover
               whileTap={{ scale: 0.9 }} // Scale down on tap
-              aria-label="Toggle menu">
+              aria-label={isOpen ? "Close menu" : "Open menu"}>
               {" "}
-              // Accessibility label
+              // Updated accessibility label
               {isOpen ? ( // Conditional rendering based on mobile menu state
                 <X className="w-6 h-6" /> // X icon for closing menu
               ) : (
@@ -159,4 +163,5 @@ const Header = () => {
   );
 };
 
+// Export the Header component for use in other parts of the application
 export default Header;
