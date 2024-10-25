@@ -55,7 +55,7 @@ const Header = () => {
             {" "}
             // Scale down on tap
             <Code className="w-8 h-8" /> // Code icon
-            <span>DevAA</span> // Brand name
+            <span>Abdullah</span> // Brand name
           </motion.a>
 
           {/* Desktop Menu */}
