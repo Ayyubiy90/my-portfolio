@@ -91,7 +91,7 @@ const About = () => {
                           {title} // Title of the information
                         </h3>
                         <p className="text-gray-600 dark:text-gray-300">
-                          {text}
+                          {text}{" "}
                         </p>{" "}
                         // Description text
                       </div>
