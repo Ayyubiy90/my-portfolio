@@ -1,5 +1,4 @@
 // Import necessary dependencies
-import React from "react";
 import { motion } from "framer-motion"; // For animations
 import { useInView } from "react-intersection-observer"; // For tracking element visibility
 import { Mail, Phone, MapPin } from "lucide-react"; // Icons for contact information
