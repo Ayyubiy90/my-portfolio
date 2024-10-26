@@ -3,6 +3,8 @@ import { Github, Linkedin, Mail, Heart } from "lucide-react"; // Importing icon 
 
 // Footer component definition
 const Footer = () => {
+  const currentYear = new Date().getFullYear(); // Store the current year for copyright notice
+
   return (
     <footer className="bg-white dark:bg-gray-800 py-12">
       {" "}
@@ -34,9 +36,9 @@ const Footer = () => {
                   target="_blank" // Open link in a new tab
                   rel="noopener noreferrer" // Security measures for external links
                   whileHover={{ y: -2 }} // Animation effect on hover
-                  className="text-gray-600 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400">
-                  {" "}
-                  {/* Styling for the icons */}
+                  className="text-gray-600 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400"
+                  aria-hidden="true" // Accessibility attribute for decorative icons
+                >
                   <Icon className="w-6 h-6" />{" "}
                   {/* Render the icon with specified width and height */}
                 </motion.a>
@@ -48,21 +50,23 @@ const Footer = () => {
             initial={{ opacity: 0 }} // Initial opacity for fade-in effect
             animate={{ opacity: 1 }} // Target opacity for final state
             transition={{ delay: 0.2 }} // Delay before the animation starts
-            className="text-center">
-            {" "}
-            {/* Centered text styling */}
+            className="text-center" // Centered text styling
+          >
             <p className="text-gray-600 dark:text-gray-300 flex items-center justify-center">
               {" "}
               {/* Text styling for creator info */}
-              Made with <Heart className="w-4 h-4 mx-2 text-red-500" /> by{" "}
-              {/* Heart icon with styling */}
+              Made with{" "}
+              <Heart
+                className="w-4 h-4 mx-2 text-red-500"
+                aria-hidden="true"
+              />{" "}
+              by {/* Heart icon with styling */}
               Abdullah Abdurazaq {/* Creator's name */}
             </p>
             <p className="text-gray-500 dark:text-gray-400 mt-2">
               {" "}
-              {/* Text styling for copyright notice */}©{" "}
-              {new Date().getFullYear()} All rights reserved{" "}
-              {/* Current year dynamically generated */}
+              {/* Text styling for copyright notice */}© {currentYear} All
+              rights reserved {/* Current year dynamically generated */}
             </p>
           </motion.div>
         </div>
