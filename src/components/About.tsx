@@ -44,19 +44,17 @@ const About = () => {
               transition={{ delay: 0.4 }} // Delay for the animation
               className="space-y-6">
               <p className="text-gray-600 dark:text-gray-300">
-                I'm a frontend developer from Lagos, Nigeria, with a growing
-                expertise in backend development. Self-taught for 2 years with
-                an additional year of project building experience, I'm
-                passionate about creating responsive and intuitive web
-                applications.
+                I'm a Frontend Developer from Lagos, Nigeria, with a growing
+                interest in backend development. Self-taught for 2 years, with
+                an additional year of project experience, I'm passionate about
+                creating responsive and intuitive web applications.
               </p>
 
               <p className="text-gray-600 dark:text-gray-300">
-                Currently pursuing my bachelor's degree in Computer Science, I'm
-                actively seeking remote opportunities for full-time, part-time,
-                or contract positions. Outside of coding, I'm an avid follower
-                of tech trends, love exploring new gadgets, and enjoy playing
-                video games.
+                Currently pursuing a bachelor's degree in Computer Science, I'm
+                open to remote full-time, part-time, or contract roles. Outside
+                of coding, I'm an avid tech enthusiast, love exploring new
+                gadgets, and enjoy gaming.
               </p>
 
               <div className="space-y-4">
@@ -65,12 +63,12 @@ const About = () => {
                   {
                     icon: User, // Icon for experience
                     title: "Experience",
-                    text: "3+ years in web development",
+                    text: "3 years in software development (specializing in web applications)",
                   },
                   {
                     icon: Award, // Icon for status
                     title: "Status",
-                    text: "Open to remote work opportunities",
+                    text: "Actively seeking remote roles in frontend or software development",
                   },
                   {
                     icon: BookOpen, // Icon for education
