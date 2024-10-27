@@ -80,7 +80,7 @@ const Skills = () => {
         },
         {
           name: "Tailwind CSS",
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+          icon: "https://cdn.jsdelivr.net/npm/devicon/icons/tailwindcss/tailwindcss-plain.svg",
         },
       ],
     },
