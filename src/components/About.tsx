@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"; // Importing motion for animations
 import { useInView } from "react-intersection-observer"; // Hook to detect if the component is in view
 import { User, Award, BookOpen } from "lucide-react"; // Importing icons from lucide-react
+import img from "../../img/FB_IMG_1712599071700.jpg"; // Image URL
 
 const About = () => {
   // Using the useInView hook to track if the section is in the viewport
@@ -31,7 +32,7 @@ const About = () => {
               transition={{ delay: 0.2 }} // Delay for the animation
             >
               <img
-                src="https://images.unsplash.com/photo-1537511446984-935f663eb1f4?auto=format&fit=crop&w=800"
+                src={img} // Image source
                 alt="Profile" // Alt text for accessibility
                 className="rounded-lg shadow-lg" // Styling for the image
               />
