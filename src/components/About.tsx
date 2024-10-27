@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"; // Importing motion for animations
 import { useInView } from "react-intersection-observer"; // Hook to detect if the component is in view
 import { User, Award, BookOpen } from "lucide-react"; // Importing icons from lucide-react
-import img from "../../img/FB_IMG_1712599071700.jpg"; // Image URL
+import img from "../../img/img-2.jpg"; // Image URL
 
 const About = () => {
   // Using the useInView hook to track if the section is in the viewport
