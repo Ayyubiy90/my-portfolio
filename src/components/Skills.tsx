@@ -52,6 +52,10 @@ const Skills = () => {
           name: "Angular",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
         },
+        {
+          name: "SCSS",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+        },
       ],
     },
     {
@@ -68,6 +72,10 @@ const Skills = () => {
         {
           name: "Java",
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+        },
+        {
+          name: "PHP",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
         },
       ],
     },
