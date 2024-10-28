@@ -2,6 +2,7 @@
 import { motion } from "framer-motion"; // Import motion for animations
 import { useInView } from "react-intersection-observer"; // Import hook to detect if an element is in view
 import { Github, ExternalLink } from "lucide-react"; // Import icons for GitHub and external links
+import siphome from "../../img/projects/siphome.png";
 
 // Define the Projects component
 const Projects = () => {
@@ -14,14 +15,14 @@ const Projects = () => {
   // Array of project objects containing details for each project
   const projects = [
     {
-      title: "E-commerce Platform", // Project title
+      title: "Siphome Smart Home System", // Project title
       description:
-        "A full-featured e-commerce platform built with React and Node.js", // Project description
+        "This project aims to revolutionize how we interact with our homes by providing advanced smart home solutions.", // Project description
       image:
-        "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800", // Project image URL
-      technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"], // Technologies used in the project
-      githubUrl: "#", // Placeholder URL for GitHub repository
-      liveUrl: "#", // Placeholder URL for live demo
+        siphome, // Project image URL
+      technologies: ["React", "JavaScript", "HTML", "CSS"], // Technologies used in the project
+      githubUrl: "https://github.com/Ayyubiy90/siphome", // Placeholder URL for GitHub repository
+      liveUrl: "https://siphome-chinxas-projects.vercel.app/", // Placeholder URL for live demo
     },
     {
       title: "Task Management App",
