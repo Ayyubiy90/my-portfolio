@@ -30,3 +30,4 @@ dist-ssr
 # Ignore backend specific files
 /contact-form-backend/logs
 /contact-form-backend/*.log
+.vercel
