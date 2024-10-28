@@ -82,9 +82,9 @@ const Hero = () => {
         <motion.div variants={itemVariants} className="flex space-x-6 mt-12">
           {/* Array of social media links with icons */}
           {[
-            { Icon: Github, href: "https://github.com" }, // Github link
-            { Icon: Linkedin, href: "https://linkedin.com" }, // LinkedIn link
-            { Icon: Mail, href: "mailto:contact@example.com" }, // Mail link
+            { Icon: Github, href: "https://github.com/Ayyubiy90" }, // Github link
+            { Icon: Linkedin, href: "https://www.linkedin.com/in/abdullah-a-2940b7260" }, // LinkedIn link
+            { Icon: Mail, href: "mailto:ayyubiy67@gmail.com" }, // Mail link
           ].map(({ Icon, href }) => (
             // Mapping through each social link to create an anchor element
             <motion.a
