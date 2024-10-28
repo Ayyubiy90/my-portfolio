@@ -3,6 +3,9 @@ import { motion } from "framer-motion"; // Import motion for animations
 import { useInView } from "react-intersection-observer"; // Import hook to detect if an element is in view
 import { Github, ExternalLink } from "lucide-react"; // Import icons for GitHub and external links
 import siphome from "../../img/projects/siphome.png";
+import pre_school from "../../img/projects/Pre-school enrollment.jpg";
+import hms from "../../img/projects/hms.jpg";
+import hie from "../../img/projects/hie.jpg";
 
 // Define the Projects component
 const Projects = () => {
@@ -18,29 +21,37 @@ const Projects = () => {
       title: "Siphome Smart Home System", // Project title
       description:
         "This project aims to revolutionize how we interact with our homes by providing advanced smart home solutions.", // Project description
-      image:
-        siphome, // Project image URL
+      image: siphome, // Project image URL
       technologies: ["React", "JavaScript", "HTML", "CSS"], // Technologies used in the project
       githubUrl: "https://github.com/Ayyubiy90/siphome", // Placeholder URL for GitHub repository
       liveUrl: "https://siphome-chinxas-projects.vercel.app/", // Placeholder URL for live demo
     },
     {
-      title: "Task Management App",
+      title: "Pre-school Enrollment System Project",
       description:
-        "A collaborative task management application with real-time updates",
-      image:
-        "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800",
-      technologies: ["Vue.js", "Express", "PostgreSQL", "Socket.io"],
-      githubUrl: "#",
+        "A web application enabling parents to access essential preschool information and easily enroll their children.",
+      image: pre_school,
+      technologies: ["JavaScript", "PHP", "CSS", "SCSS"],
+      githubUrl: "https://github.com/Ayyubiy90/Pre-school-enrollement-system",
       liveUrl: "#",
     },
     {
-      title: "Weather Dashboard",
-      description: "A weather forecasting dashboard with interactive maps",
-      image:
-        "https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&w=800",
-      technologies: ["React", "TypeScript", "OpenWeather API", "Chart.js"],
-      githubUrl: "#",
+      title: "Hospital Management System (HMS)",
+      description:
+        "A web-based application built with PHP to simplify hospital operations, featuring modules for patient registration, appointment scheduling, record management, billing, and more.",
+      image: hms,
+      technologies: ["SCSS", "CSS", "JavaScript", "PHP"],
+      githubUrl: "https://github.com/Ayyubiy90/Hospital-Management-System",
+      liveUrl: "#",
+    },
+    {
+      title: "Health Information Exchange (HIE) System",
+      description:
+        "A secure platform for efficient sharing of patient health data among healthcare providers, improving care coordination and patient outcomes.",
+      image: hie,
+      technologies: ["HTML", "CSS", "C#", "JavaScript", "ASP.NET"],
+      githubUrl:
+        "https://github.com/Ayyubiy90/Health-Information-Exchange-System",
       liveUrl: "#",
     },
   ];
