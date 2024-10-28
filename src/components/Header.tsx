@@ -57,7 +57,7 @@ const Header = () => {
             {" "}
             {/* // Scale down slightly on press */}
             <Code className="w-8 h-8" /> {/* Code icon */}
-            <span>DevAA</span> {/* Website name */}
+            <span>AA</span> {/* Website name */}
           </motion.a>
 
           {/* Desktop Menu - visible on larger screens */}
