@@ -1,6 +1,6 @@
 // Import necessary libraries and components
 import { motion } from "framer-motion"; // Import motion for animations
-import { Github, Linkedin, Mail, Heart } from "lucide-react"; // Import icons from lucide-react
+import { Github, Linkedin, Mail } from "lucide-react"; // Import icons from lucide-react
 
 // Define the Footer functional component
 const Footer = () => {
@@ -18,9 +18,12 @@ const Footer = () => {
             {/* Flexbox for icon links with spacing */}
             {[
               // Array of social media links with corresponding icons
-              { Icon: Github, href: "https://github.com" },
-              { Icon: Linkedin, href: "https://linkedin.com" },
-              { Icon: Mail, href: "mailto:contact@example.com" },
+              { Icon: Github, href: "https://github.com/Ayyubiy90" },
+              {
+                Icon: Linkedin,
+                href: "https://www.linkedin.com/in/abdullah-a-2940b7260",
+              },
+              { Icon: Mail, href: "mailto:ayyubiy67@gmail.com" },
             ].map(
               (
                 { Icon, href } // Map through each item in the array
@@ -46,8 +49,8 @@ const Footer = () => {
             {" "}
             {/* Centered text container */}
             <p className="text-gray-600 dark:text-gray-300 flex items-center justify-center">
-              Made with <Heart className="w-4 h-4 mx-2 text-red-500" /> by
-              Abdullah Abdurazaq {/* Display a heart icon and author name */}
+              Made by Abdullah Abdurazaq{" "}
+              {/* Display a heart icon and author name */}
             </p>
             <p className="text-gray-500 dark:text-gray-400 mt-2">
               © {new Date().getFullYear()} All rights reserved{" "}
