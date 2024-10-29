@@ -31,3 +31,6 @@ dist-ssr
 /contact-form-backend/logs
 /contact-form-backend/*.log
 .vercel
+
+
+.env

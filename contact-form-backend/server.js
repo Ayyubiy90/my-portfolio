@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 // Import required modules
 const express = require("express"); // Web framework for Node.js
 const bodyParser = require("body-parser"); // Middleware to parse incoming request bodies
@@ -16,8 +18,8 @@ app.use(bodyParser.json()); // Parse JSON request bodies
 const transporter = nodemailer.createTransport({
   service: "Gmail", // Specify the email service provider (Gmail in this case)
   auth: {
-    user: "process.env.EMAIL_USER", // Your email address used for sending emails
-    pass: "process.env.EMAIL_PASS", // Use the App Password generated for your Gmail account
+    user: process.env.EMAIL_USER, // Your email address used for sending emails
+    pass: process.env.EMAIL_PASS, // Use the App Password generated for your Gmail account
   },
 });
 
