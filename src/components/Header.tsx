@@ -40,6 +40,24 @@ const Header = () => {
     setIsDark(!isDark); // Toggle the 'isDark' state
   };
 
+  // Function to handle smooth scrolling and menu closing
+  const handleClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    targetId: string
+  ) => {
+    e.preventDefault();
+    const element = document.querySelector(targetId);
+    if (element) {
+      const offsetTop =
+        element.getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth",
+      });
+      setIsOpen(false); // Close mobile menu after clicking
+    }
+  };
+
   return (
     // Header component structure
     <header className="fixed w-full top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-sm">
@@ -53,7 +71,7 @@ const Header = () => {
             className="flex items-center space-x-2 text-2xl font-bold text-indigo-600 dark:text-indigo-400"
             whileHover={{ scale: 1.05 }} // Scale up slightly on hover
             whileTap={{ scale: 0.95 }} // Scale down slightly on press
-          >
+            onClick={(e) => handleClick(e, "#home")}>
             <Code className="w-8 h-8" /> {/* Code icon */}
             <span>AA</span> {/* Website name */}
           </motion.a>
@@ -68,8 +86,7 @@ const Header = () => {
                 className="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition-colors"
                 whileHover={{ y: -2 }} // Move up slightly on hover
                 whileTap={{ y: 0 }} // Reset position on press
-                onClick={() => setIsOpen(false)} // Close mobile menu on link click
-              >
+                onClick={(e) => handleClick(e, href)}>
                 {label}
               </motion.a>
             ))}
@@ -142,7 +159,9 @@ const Header = () => {
                     key={href} // Unique key for each link
                     href={href}
                     className="block px-4 py-2 text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors"
-                    onClick={() => setIsOpen(false)} // Close mobile menu on link click
+                    onClick={(e) => handleClick(e, href)}
+                    whileHover={{ x: 5 }} // Add a subtle hover effect
+                    whileTap={{ scale: 0.95 }} // Add a subtle tap effect
                   >
                     {label}
                   </motion.a>
