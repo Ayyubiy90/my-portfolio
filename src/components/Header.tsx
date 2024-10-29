@@ -1,12 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "react"; // Import React hooks for state and side effects
 import { Menu, X, Sun, Moon, Code } from "lucide-react"; // Import necessary icons from lucide-react
-import { motion, AnimatePresence } from "framer-motion"; // Import framer-motion for smooth animations
+import { motion, AnimatePresence } from "framer-motion"; // Import framer-motion for animations
 
 const Header = () => {
-  // State for managing the mobile menu's open/close state
+  // State to manage the mobile menu's open/close state
   const [isOpen, setIsOpen] = useState(false);
 
-  // State for managing dark/light mode, initialized based on system preference
+  // State to manage dark/light mode, initialized based on system preference
   const [isDark, setIsDark] = useState(() => {
     // Check if running in the browser (window object exists)
     if (typeof window !== "undefined") {
@@ -18,12 +18,11 @@ const Header = () => {
   });
 
   // useEffect to add/remove 'dark' class to the document's root element
-  // whenever the 'isDark' state changes, effectively toggling dark mode
   useEffect(() => {
     if (isDark) {
-      document.documentElement.classList.add("dark");
+      document.documentElement.classList.add("dark"); // Add dark class
     } else {
-      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.remove("dark"); // Remove dark class
     }
   }, [isDark]); // Run this effect whenever 'isDark' changes
 
@@ -53,9 +52,8 @@ const Header = () => {
             href="#home"
             className="flex items-center space-x-2 text-2xl font-bold text-indigo-600 dark:text-indigo-400"
             whileHover={{ scale: 1.05 }} // Scale up slightly on hover
-            whileTap={{ scale: 0.95 }}>
-            {" "}
-            {/* // Scale down slightly on press */}
+            whileTap={{ scale: 0.95 }} // Scale down slightly on press
+          >
             <Code className="w-8 h-8" /> {/* Code icon */}
             <span>AA</span> {/* Website name */}
           </motion.a>
@@ -69,9 +67,9 @@ const Header = () => {
                 href={href}
                 className="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 transition-colors"
                 whileHover={{ y: -2 }} // Move up slightly on hover
-                whileTap={{ y: 0 }}>
-                {" "}
-                {/* // Reset position on press */}
+                whileTap={{ y: 0 }} // Reset position on press
+                onClick={() => setIsOpen(false)} // Close mobile menu on link click
+              >
                 {label}
               </motion.a>
             ))}
@@ -79,9 +77,10 @@ const Header = () => {
             <motion.button
               onClick={toggleTheme} // Call toggleTheme on click
               className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label="Toggle theme">
+              whileHover={{ scale: 1.1 }} // Scale up on hover
+              whileTap={{ scale: 0.9 }} // Scale down on press
+              aria-label="Toggle theme" // Accessibility label
+            >
               {/* Conditionally render sun/moon icon based on theme */}
               {isDark ? (
                 <Sun className="w-5 h-5" />
@@ -97,9 +96,10 @@ const Header = () => {
             <motion.button
               onClick={toggleTheme} // Call toggleTheme on click
               className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label="Toggle theme">
+              whileHover={{ scale: 1.1 }} // Scale up on hover
+              whileTap={{ scale: 0.9 }} // Scale down on press
+              aria-label="Toggle theme" // Accessibility label
+            >
               {/* Conditionally render sun/moon icon based on theme */}
               {isDark ? (
                 <Sun className="w-5 h-5" />
@@ -111,9 +111,10 @@ const Header = () => {
             <motion.button
               onClick={() => setIsOpen(!isOpen)} // Toggle isOpen state
               className="text-gray-600 dark:text-gray-300"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label="Toggle menu">
+              whileHover={{ scale: 1.1 }} // Scale up on hover
+              whileTap={{ scale: 0.9 }} // Scale down on press
+              aria-label="Toggle menu" // Accessibility label
+            >
               {/* Conditionally render menu/X icon based on isOpen state */}
               {isOpen ? (
                 <X className="w-6 h-6" />
@@ -142,9 +143,7 @@ const Header = () => {
                     href={href}
                     className="block px-4 py-2 text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors"
                     onClick={() => setIsOpen(false)} // Close mobile menu on link click
-                    whileHover={{ x: 4 }}>
-                    {" "}
-                    {/* // Move right slightly on hover */}
+                  >
                     {label}
                   </motion.a>
                 ))}
