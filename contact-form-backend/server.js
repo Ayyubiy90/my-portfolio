@@ -16,8 +16,8 @@ app.use(bodyParser.json()); // Parse JSON request bodies
 const transporter = nodemailer.createTransport({
   service: "Gmail", // Specify the email service provider (Gmail in this case)
   auth: {
-    user: "ayyubiy67@gmail.com", // Your email address used for sending emails
-    pass: "lvjv eeup gmso ewnx", // Use the App Password generated for your Gmail account
+    user: "process.env.EMAIL_USER", // Your email address used for sending emails
+    pass: "process.env.EMAIL_PASS", // Use the App Password generated for your Gmail account
   },
 });
 
