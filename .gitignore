@@ -12,7 +12,6 @@ node_modules
 /contact-form-backend/node_modules
 
 # Build output for frontend
-dist
 dist-ssr
 *.local
 
