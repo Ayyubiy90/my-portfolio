@@ -1,15 +1,15 @@
 {
-    "name": "my-portfolio",
-    "version": "1.0.0",
-    "scripts": {
-      "start": "node backend/server.js",
-      "heroku-postbuild": "cd frontend && npm install && npm run build"
-    },
-    "dependencies": {
-      "express": "^4.21.1",
-      "body-parser": "^1.20.3",
-      "cors": "^2.8.5",
-      "dotenv": "^16.4.5",
-      "nodemailer": "^6.9.16"
-    }
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node backend/server.js",
+    "build": "cd frontend && npm install && npm run build"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "nodemailer": "^6.9.16"
   }
+}
