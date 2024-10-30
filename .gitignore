@@ -13,6 +13,7 @@ node_modules
 
 # Build output for frontend
 /frontend/dist
+dist
 dist-ssr
 *.local
 
