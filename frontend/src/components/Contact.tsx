@@ -34,6 +34,13 @@ const Contact = () => {
       return;
     }
 
+    // Email validation using regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+
     // Prepare data to send
     const formData = {
       name,
@@ -42,13 +49,16 @@ const Contact = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/api/contact", {
+      const response = await fetch("http://localhost:5173/api/contact", {
+        // Updated URL
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
+
+      console.log("Response:", response); // Log the response for debugging
 
       if (!response.ok) {
         throw new Error("Failed to send message.");
@@ -113,7 +123,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  className="block text-sm font-medium text-gray- 700 dark:text-gray-300 mb-2">
                   Name
                 </label>
                 <input
