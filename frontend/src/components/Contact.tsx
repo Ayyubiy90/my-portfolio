@@ -49,7 +49,7 @@ const Contact = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:5173/api/contact", {
+      const response = await fetch("https://portfoliobackendabdullah.netlify.app/.netlify/functions/contact", {
         // Updated URL
         method: "POST",
         headers: {
