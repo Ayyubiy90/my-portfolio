@@ -19,7 +19,7 @@ exports.handler = async (event, context) => {
     return {
       statusCode: 200,
       headers: {
-        "Access-Control-Allow-Origin": "*", // or your specific domain
+        "Access-Control-Allow-Origin": "https://my-portfolio-fawn-three-77.vercel.app/", // or your specific domain
         "Access-Control-Allow-Methods": "POST, OPTIONS", // Allow methods
         "Access-Control-Allow-Headers": "Content-Type", // Allow headers
       },
@@ -58,7 +58,7 @@ exports.handler = async (event, context) => {
     return {
       statusCode: 500, // Internal Server Error
       headers: {
-        "Access-Control-Allow-Origin": "*", // Allow requests from any origin (adjust for security)
+        "Access-Control-Allow-Origin": "https://my-portfolio-fawn-three-77.vercel.app/", // Allow requests from any origin (adjust for security)
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ message: "Failed to send message." }),
