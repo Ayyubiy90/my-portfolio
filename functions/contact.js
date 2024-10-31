@@ -18,6 +18,11 @@ exports.handler = async (event, context) => {
   if (event.httpMethod !== "POST") {
     return {
       statusCode: 405, // Method Not Allowed
+      headers: {
+        "Access-Control-Allow-Origin":
+          "https://my-portfolio-fawn-three-77.vercel.app/", // Allow requests from any origin (adjust for security)
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({ message: "Method not allowed" }),
     };
   }
@@ -40,6 +45,10 @@ exports.handler = async (event, context) => {
     console.log("Email sent successfully"); // Log the success response
     return {
       statusCode: 200, // OK
+      headers: {
+        "Access-Control-Allow-Origin": "*", // Allow requests from any origin (adjust for security)
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({ message: "Message received successfully!" }),
     };
   } catch (error) {
@@ -47,6 +56,10 @@ exports.handler = async (event, context) => {
     console.error("Error sending email:", error);
     return {
       statusCode: 500, // Internal Server Error
+      headers: {
+        "Access-Control-Allow-Origin": "*", // Allow requests from any origin (adjust for security)
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({ message: "Failed to send message." }),
     };
   }
