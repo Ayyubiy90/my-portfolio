@@ -15,13 +15,13 @@ const transporter = nodemailer.createTransport({
 // Define the handler for the Netlify function
 exports.handler = async (event, context) => {
   // Check if the request method is POST
-  if (event.httpMethod !== "POST") {
+  if (event.httpMethod === "OPTIONS") {
     return {
-      statusCode: 405, // Method Not Allowed
+      statusCode: 200,
       headers: {
-        "Access-Control-Allow-Origin":
-          "https://my-portfolio-fawn-three-77.vercel.app/", // Allow requests from any origin (adjust for security)
-        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*", // or your specific domain
+        "Access-Control-Allow-Methods": "POST, OPTIONS", // Allow methods
+        "Access-Control-Allow-Headers": "Content-Type", // Allow headers
       },
       body: JSON.stringify({ message: "Method not allowed" }),
     };
@@ -46,7 +46,8 @@ exports.handler = async (event, context) => {
     return {
       statusCode: 200, // OK
       headers: {
-        "Access-Control-Allow-Origin": "*", // Allow requests from any origin (adjust for security)
+        "Access-Control-Allow-Origin":
+          "https://my-portfolio-fawn-three-77.vercel.app/", // Allow requests from any origin (adjust for security)
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ message: "Message received successfully!" }),
