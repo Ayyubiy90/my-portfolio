@@ -6,6 +6,7 @@ import siphome from "../../img/projects/siphome.png";
 import pre_school from "../../img/projects/Pre-school enrollment.jpg";
 import hms from "../../img/projects/hms.jpg";
 import hie from "../../img/projects/hie.jpg";
+import budget_tracker from "../../img/projects/budget tracker.png";
 
 // Define the Projects component
 const Projects = () => {
@@ -58,7 +59,7 @@ const Projects = () => {
       title: "Personal Budget Tracker",
       description:
         "The Personal Budget Tracker is a user-friendly web app that helps you manage your finances by tracking income and expenses with secure authentication and interactive visual insights.",
-      image: hie,
+      image: budget_tracker,
       technologies: ["React", "Typescript", "Tailwind CSS", "Firebase", "Recharts", "React Hook Form", "Currency.js"],
       githubUrl:
         "https://github.com/Ayyubiy90/budget-tracker",
