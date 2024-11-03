@@ -54,6 +54,16 @@ const Projects = () => {
         "https://github.com/Ayyubiy90/Health-Information-Exchange-System",
       liveUrl: "#",
     },
+    {
+      title: "Personal Budget Tracker",
+      description:
+        "The Personal Budget Tracker is a user-friendly web app that helps you manage your finances by tracking income and expenses with secure authentication and interactive visual insights.",
+      image: hie,
+      technologies: ["React", "Typescript", "Tailwind CSS", "Firebase", "Recharts", "React Hook Form", "Currency.js"],
+      githubUrl:
+        "https://github.com/Ayyubiy90/budget-tracker",
+      liveUrl: "https://budget-tracker-ashen.vercel.app/",
+    },
   ];
 
   // Animation variants for the container (fade in effect)
