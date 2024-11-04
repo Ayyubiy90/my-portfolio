@@ -19,6 +19,16 @@ const Projects = () => {
   // Array of project objects containing details for each project
   const projects = [
     {
+      title: "Personal Budget Tracker",
+      description:
+        "The Personal Budget Tracker is a user-friendly web app that helps you manage your finances by tracking income and expenses with secure authentication and interactive visual insights.",
+      image: budget_tracker,
+      technologies: ["React", "Typescript", "Tailwind CSS", "Firebase", "Recharts", "React Hook Form", "Currency.js"],
+      githubUrl:
+        "https://github.com/Ayyubiy90/budget-tracker",
+      liveUrl: "https://budget-tracker-ashen.vercel.app/",
+    },
+    {
       title: "Siphome Smart Home System", // Project title
       description:
         "This project aims to revolutionize how we interact with our homes by providing advanced smart home solutions.", // Project description
@@ -54,16 +64,6 @@ const Projects = () => {
       githubUrl:
         "https://github.com/Ayyubiy90/Health-Information-Exchange-System",
       liveUrl: "#",
-    },
-    {
-      title: "Personal Budget Tracker",
-      description:
-        "The Personal Budget Tracker is a user-friendly web app that helps you manage your finances by tracking income and expenses with secure authentication and interactive visual insights.",
-      image: budget_tracker,
-      technologies: ["React", "Typescript", "Tailwind CSS", "Firebase", "Recharts", "React Hook Form", "Currency.js"],
-      githubUrl:
-        "https://github.com/Ayyubiy90/budget-tracker",
-      liveUrl: "https://budget-tracker-ashen.vercel.app/",
     },
   ];
 
