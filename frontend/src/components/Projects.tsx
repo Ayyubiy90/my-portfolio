@@ -39,11 +39,11 @@ const Projects = () => {
       liveUrl: "https://siphome-chinxas-projects.vercel.app/", // Placeholder URL for live demo
     },
     {
-      title: "Siphome Smart Home System", // Project title
+      title: "Modern Dashboard", // Project title
       description:
         "A highly personalized, interactive dashboard that demonstrates your ability to integrate multiple APIs, manage complex data flows, and create a clean, user-friendly interface.", // Project description
       image: modern_dashboard_tracker, // Project image URL
-      technologies: ["TypeScript", "JavaScript", "Tailwind CSS", "CSS", "Zustand", "Hello Pangea DND"], // Technologies used in the project
+      technologies: ["TypeScript", "JavaScript", "Tailwind CSS", "CSS", "Zustand", "Hello Pangea DND", "React Hot Toast", "React Error Boundary"], // Technologies used in the project
       githubUrl: "https://github.com/Ayyubiy90/personalized-dashboard-with-API-integrations", // Placeholder URL for GitHub repository
       liveUrl: "https://personalized-dashboard-with-api-integrations.vercel.app/", // Placeholder URL for live demo
     },
