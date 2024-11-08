@@ -7,6 +7,7 @@ import pre_school from "../../img/projects/Pre-school enrollment.jpg";
 import hms from "../../img/projects/hms.jpg";
 import hie from "../../img/projects/hie.jpg";
 import budget_tracker from "../../img/projects/budget tracker.png";
+import modern_dashboard_tracker from "../../img/projects/modern_dashboard.png";
 
 // Define the Projects component
 const Projects = () => {
@@ -36,6 +37,15 @@ const Projects = () => {
       technologies: ["React", "JavaScript", "HTML", "CSS"], // Technologies used in the project
       githubUrl: "https://github.com/Ayyubiy90/siphome", // Placeholder URL for GitHub repository
       liveUrl: "https://siphome-chinxas-projects.vercel.app/", // Placeholder URL for live demo
+    },
+    {
+      title: "Siphome Smart Home System", // Project title
+      description:
+        "A highly personalized, interactive dashboard that demonstrates your ability to integrate multiple APIs, manage complex data flows, and create a clean, user-friendly interface.", // Project description
+      image: modern_dashboard_tracker, // Project image URL
+      technologies: ["TypeScript", "JavaScript", "Tailwind CSS", "CSS", "Zustand", "Hello Pangea DND"], // Technologies used in the project
+      githubUrl: "https://github.com/Ayyubiy90/personalized-dashboard-with-API-integrations", // Placeholder URL for GitHub repository
+      liveUrl: "https://personalized-dashboard-with-api-integrations.vercel.app/", // Placeholder URL for live demo
     },
     {
       title: "Pre-school Enrollment System Project",
