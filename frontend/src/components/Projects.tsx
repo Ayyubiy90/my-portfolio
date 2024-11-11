@@ -8,6 +8,7 @@ import hms from "../../img/projects/hms.jpg";
 import hie from "../../img/projects/hie.jpg";
 import budget_tracker from "../../img/projects/budget tracker.png";
 import modern_dashboard_tracker from "../../img/projects/modern_dashboard.png";
+import modern_e_commerce from "../../img/projects/modern e-commerce.png";
 
 // Define the Projects component
 const Projects = () => {
@@ -46,6 +47,15 @@ const Projects = () => {
       technologies: ["TypeScript", "JavaScript", "Tailwind CSS", "CSS", "Zustand", "Hello Pangea DND", "React Hot Toast", "React Error Boundary"], // Technologies used in the project
       githubUrl: "https://github.com/Ayyubiy90/personalized-dashboard-with-API-integrations", // Placeholder URL for GitHub repository
       liveUrl: "https://personalized-dashboard-with-api-integrations.vercel.app/", // Placeholder URL for live demo
+    },
+    {
+      title: "ModernStore - React E-commerce Platform", // Project title
+      description:
+        "A fully functional e-commerce store with a modern, polished design and engaging animations.", // Project description
+      image: modern_e_commerce, // Project image URL
+      technologies: ["React", "TypeScript", "Tailwind CSS", "CSS", "Zustand", "Lucide React", "Stripe", "Framer motion"], // Technologies used in the project
+      githubUrl: "https://github.com/Ayyubiy90/modern-e-commerce-store", // Placeholder URL for GitHub repository
+      liveUrl: "https://modern-e-commerce-store.vercel.app/", // Placeholder URL for live demo
     },
     {
       title: "Pre-school Enrollment System Project",
