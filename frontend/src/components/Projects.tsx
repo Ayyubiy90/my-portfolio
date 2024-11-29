@@ -9,6 +9,7 @@ import hie from "../../img/projects/hie.jpg";
 import budget_tracker from "../../img/projects/budget tracker.png";
 import modern_dashboard_tracker from "../../img/projects/modern_dashboard.png";
 import modern_e_commerce from "../../img/projects/modern e-commerce.png";
+import portfolio from "../../img/projects/portfolio.png";
 
 // Define the Projects component
 const Projects = () => {
@@ -20,6 +21,16 @@ const Projects = () => {
 
   // Array of project objects containing details for each project
   const projects = [
+    {
+      title: "AI-Powered Portfolio & Blog Platform",
+      description:
+        "A modern, feature-rich portfolio and blog platform built with Next.js 13, React, and TypeScript. Featuring an AI chat assistant, multilingual support, and interactive user engagement features.",
+      image: portfolio,
+      technologies: ["Next.js 13", "Typescript", "Tailwind CSS", "UI Components", "Zustand", "Recharts", "React Hook Form", "Zod", "Framer Motion", "i18next"],
+      githubUrl:
+        "https://github.com/Ayyubiy90/ai-powered-blog-and-portfolio-site",
+      liveUrl: "https://abdullah-ai-portfolio-blog.vercel.app/",
+    },
     {
       title: "Personal Budget Tracker",
       description:
