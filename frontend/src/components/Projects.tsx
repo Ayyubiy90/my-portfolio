@@ -7,7 +7,7 @@ import budget_tracker from "../../img/projects/budget tracker.png";
 import modern_dashboard_tracker from "../../img/projects/modern_dashboard.png";
 import modern_e_commerce from "../../img/projects/modern e-commerce.png";
 import portfolio from "../../img/projects/portfolio.png";
-import data_visualization from "../../img/projects/data_visualization.png";
+import data_visualization from "../../img/projects/data visualization.png";
 
 // Define the Projects component
 const Projects = () => {
