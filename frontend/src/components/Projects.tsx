@@ -10,6 +10,7 @@ import budget_tracker from "../../img/projects/budget tracker.png";
 import modern_dashboard_tracker from "../../img/projects/modern_dashboard.png";
 import modern_e_commerce from "../../img/projects/modern e-commerce.png";
 import portfolio from "../../img/projects/portfolio.png";
+import data_visualization from "../../img/projects/data_visualization.png";
 
 // Define the Projects component
 const Projects = () => {
@@ -67,6 +68,16 @@ const Projects = () => {
       technologies: ["React", "TypeScript", "Tailwind CSS", "CSS", "Zustand", "Lucide React", "Stripe", "Framer motion"], // Technologies used in the project
       githubUrl: "https://github.com/Ayyubiy90/modern-e-commerce-store", // Placeholder URL for GitHub repository
       liveUrl: "https://modern-e-commerce-store.vercel.app/", // Placeholder URL for live demo
+    },
+    {
+      title: "Data Visualization Dashboard",
+      description:
+        "A modern, interactive dashboard built with React, TypeScript, and Recharts for analyzing and visualizing data in real-time. Features a responsive design, dark mode support, and interactive charts.",
+      image: data_visualization,
+      technologies: ["React", "Typescript", "Tailwind CSS", "Recharts", "Lucide React", "Regression.js"],
+      githubUrl:
+        "https://github.com/Ayyubiy90/data-visualization-dashboard",
+      liveUrl: "https://data-visualization-dashboard-drab.vercel.app/",
     },
     {
       title: "Pre-school Enrollment System Project",
