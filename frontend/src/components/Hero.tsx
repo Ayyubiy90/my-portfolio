@@ -54,7 +54,7 @@ const Hero = () => {
         <motion.p
           variants={itemVariants} // Applying item animation variants
           className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl">
-          Frontend Developer with 3 years of experience building scalable web
+          Software Frontend Developer with 3 years of experience building scalable web
           applications, specializing in the React ecosystem and modern web
           technologies. Proficient in frontend development with supporting
           experience in backend technologies for full-stack projects.

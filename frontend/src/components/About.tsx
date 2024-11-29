@@ -45,7 +45,7 @@ const About = () => {
               transition={{ delay: 0.4 }} // Delay for the animation
               className="space-y-6">
               <p className="text-gray-600 dark:text-gray-300">
-                I'm a Frontend Developer from Lagos, Nigeria, with a growing
+                I'm a Software Frontend Developer from Lagos, Nigeria, with a growing
                 interest in backend development. Self-taught for 2 years, with
                 an additional year of project experience, I'm passionate about
                 creating responsive and intuitive web applications.
