@@ -3,9 +3,6 @@ import { motion } from "framer-motion"; // Import motion for animations
 import { useInView } from "react-intersection-observer"; // Import hook to detect if an element is in view
 import { Github, ExternalLink } from "lucide-react"; // Import icons for GitHub and external links
 import siphome from "../../img/projects/siphome.png";
-import pre_school from "../../img/projects/Pre-school enrollment.jpg";
-import hms from "../../img/projects/hms.jpg";
-import hie from "../../img/projects/hie.jpg";
 import budget_tracker from "../../img/projects/budget tracker.png";
 import modern_dashboard_tracker from "../../img/projects/modern_dashboard.png";
 import modern_e_commerce from "../../img/projects/modern e-commerce.png";
@@ -78,34 +75,6 @@ const Projects = () => {
       githubUrl:
         "https://github.com/Ayyubiy90/data-visualization-dashboard",
       liveUrl: "https://data-visualization-dashboard-drab.vercel.app/",
-    },
-    {
-      title: "Pre-school Enrollment System Project",
-      description:
-        "A web application enabling parents to access essential preschool information and easily enroll their children.",
-      image: pre_school,
-      technologies: ["JavaScript", "PHP", "CSS", "SCSS"],
-      githubUrl: "https://github.com/Ayyubiy90/Pre-school-enrollement-system",
-      liveUrl: "#",
-    },
-    {
-      title: "Hospital Management System (HMS)",
-      description:
-        "A web-based application built with PHP to simplify hospital operations, featuring modules for patient registration, appointment scheduling, record management, billing, and more.",
-      image: hms,
-      technologies: ["SCSS", "CSS", "JavaScript", "PHP"],
-      githubUrl: "https://github.com/Ayyubiy90/Hospital-Management-System",
-      liveUrl: "#",
-    },
-    {
-      title: "Health Information Exchange (HIE) System",
-      description:
-        "A secure platform for efficient sharing of patient health data among healthcare providers, improving care coordination and patient outcomes.",
-      image: hie,
-      technologies: ["HTML", "CSS", "C#", "JavaScript", "ASP.NET"],
-      githubUrl:
-        "https://github.com/Ayyubiy90/Health-Information-Exchange-System",
-      liveUrl: "#",
     },
   ];
 
